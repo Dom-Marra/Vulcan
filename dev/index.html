@@ -3,26 +3,256 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Put Web Page Title Here...</title>
+	<title>Vulcan</title>
 
 	<!-- *** IMPORTANT *** PUT LINKS TO GOOGLE FONTS HERE -->
 	<!-- Put Google Fonts Here -->
 
+	<!--
+		font-family: 'Roboto', sans-serif;
+		font-family: 'Roboto Condensed', sans-serif;
+	-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
 	<!-- end Google Fonts -->
 
 	<!-- *** IMPORTANT *** DO NOT DELETE OR EDIT THE NEXT LINE OF CODE - IT IS IMPORTANT FOR THE GULP BUILD PROCESS. SEE YOUR INSTRUCTOR FIRST IF YOU WANT TO EDIT OR DELETE THIS LINE -->
-	<link rel="stylesheet" href="styles/styles.css?cb=1">
+	<link rel="stylesheet" href="styles/styles.css?cb=1626987344973">
 
 </head>
 <body>
+	<header>
+		<div class="header-main">
+			<div class="header-main-left">
+				<a href="#">Install Map</a>
+				<a href="#">Product Literature</a>
+			</div>
 
-<!-- Put your HTML code here... -->
+			<img src="images/logo-white-vulcan.svg" alt="Vulcan logo">
+			
+			<div class="header-main-right">
+				<a href="tel:+1712-642-2755" class="icon-phone-circled">+1 712-642-2755</a>
+				<a href="#">Contact Us</a>
+			</div>
+		</div>
+		
 
+		<nav class="navigate">
+            <ul class="menu">
+                <li><a href="#0">About</a></li>
+                <li><a href="#0">Products</a></li>
+                <li><a href="#0">Services</a></li>
+                <li><a href="#0">Parts</a></li>
+				<li><a href="#0">News</a></li>
+                <li><a href="#0">Contact</a></li>
+            </ul>
+		</nav>
 
-<!-- *** IMPORTANT *** If you do not require the jQuery Library then feel free to delete the next line -->
-<script src="scripts/libs/jquery/jquery-3.4.1.min.js"></script>
-<!-- *** IMPORTANT *** DO NOT DELETE OR EDIT THE NEXT LINE OF CODE - IT IS IMPORTANT FOR THE GULP BUILD PROCESS. SEE YOUR INSTRUCTOR FIRST IF YOU WANT TO EDIT OR DELETE THIS LINE -->
-<script src="scripts/script.min.js?cb=1"></script>
-<!-- *** IMPORTANT *** DO NOT ADD ADDITIONAL SCRIPT LINKS HERE...If you want to add additional scripts simply save the script files to the "dev/scripts" directory (for your custom scripts) and the 'dev/scripts/libs' directory for any jQuery plugins or other JavaScript libraries and Gulp will concatenate and minify them into the "script.min.js" file above. See the project instructions for details -->	
-</body>
+	</header>
+	<main>
+	
+		<section class="slide-show-section">
+
+			<div class="slide-show-wrapper">
+				<img src="images/header-slider-img-01.jpg" alt="Big Machine.">
+				<img src="images/header-slider-img-02.jpg" alt="Man in blue uniform welding.">
+				<img src="images/header-slider-img-03.jpg" alt="Two employees tightening bolts.">
+
+				<div class="slider-pagination">
+					<span class="slide-show-indicator"></span>
+					<span class="slide-show-indicator"></span>
+					<span class="slide-show-indicator"></span>
+				</div>
+			</div>
+
+			<h1>WE DESIGN AND FABRICATE INDESTRICTIBLE WASTEWATER SCREENS. ENOUGH SAID</h1>
+			
+			<div class="products-services-wrapper">
+				<a href="#">View Products</a>
+				<a href="#">View Services</a>
+			</div>
+			
+		</section>
+		
+		
+		<section class="customized-order">
+			<article>
+				<h2>Customized Per Order</h2>
+				<div class="product-row">
+					<p>Just as no two treatment plants are the same, no two of our screening, grit handing or slidge thickening products are either. We'll help determine exactly what you need.</p>
+					
+					<figure class="prod-column prod-img1">
+						<img src="images/machine-01-912x834.png" alt="screening product"
+						sizes="(max-width: 480px) 300px,
+								(max-width: 1024px) 50vw, 
+								25vw"
+						srcset="images/machine-01-912x834.png 912w
+								images/machine-01-768x702.png 768w
+								images/machine-01-300x274.png 300w">
+                        <figcaption>
+                            SCREENING
+
+                            <a href="#">View Selection</a>
+                        </figcaption>
+					</figure>
+					
+					<figure class="prod-column prod-img2">
+						<img src="images/machine-02-912x834.png" alt="screening handling product"
+						sizes="(max-width: 480px) 300px,
+								(max-width: 1024px) 50vw, 
+								25vw"
+						srcset="machine-02-912x834.png 912w
+								machine-02-768x702.png 768w
+								machine-02-300x274.png 300w">	
+                        <figcaption>
+                            SCREENINGS HANDLING
+
+                            <a href="#">View Selection</a>
+                        </figcaption>
+					</figure>
+					
+					<figure class="prod-column prod-img3">
+						<img src="images/machine-03-912x834.png" alt="grit handling product"
+						sizes="(max-width: 480px) 300px,
+								(max-width: 1024px) 50vw, 
+								25vw"
+						srcset="machine-03-912x834.png 912w
+								machine-03-768x702.png 768w
+								machine-03-300x274.png 300w">
+                        <figcaption>
+                            GRIT HANDLING
+
+                            <a href="#">View Selection</a>
+                        </figcaption>
+					</figure>
+					
+					<figure class="prod-column prod-img4">
+						<img src="images/machine-04-912x834.png" alt="sludge thickening product"
+						sizes="(max-width: 480px) 300px,
+								(max-width: 1024px) 50vw, 
+								25vw"
+						srcset="machine-04-912x834.png 912w
+								machine-04-768x702.png 768w
+								machine-04-300x274.png 300w">
+                        <figcaption>
+                            SLUDGE THICKENING
+
+                            <a href="#">View Selection</a>
+                        </figcaption>
+					</figure>
+				</div>
+			</article>
+		</section>
+
+		<section class="product-advisor">
+			<h2>Product Advisor</h2>
+			<p>Find your project's perfect fit.</p>
+
+			<form action="/" method="POST" name="projectAdvisorForm">
+				<div class="form-group">
+					<label for="product-type">Product Type</label>
+					<select name="productType" id="product-type">
+						<option value="lorem">Lorem</option>
+						<option value="ipsum">Ipsum</option>
+						<option value="dolor">Dolor</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label for="screen-location">Screen Location</label>
+					<select name="screenType" id="screen-location">
+						<option value="lorem">Lorem</option>
+						<option value="ipsum">Ipsum</option>
+						<option value="dolor">Dolor</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label for="flow-type">Flow Type</label>
+					<select name="flowType" id="flow-type">
+						<option value="lorem">Lorem</option>
+						<option value="ipsum">Ipsum</option>
+						<option value="dolor">Dolor</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label for="channel-depth">Channel Depth</label>
+					<select name="channelDepth" id="channel-depth">
+						<option value="lorem">Lorem</option>
+						<option value="ipsum">Ipsum</option>
+						<option value="dolor">Dolor</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label for="channel-width">Channel Width</label>
+					<select name="channelWidth" id="channel-width">
+						<option value="lorem">Lorem</option>
+						<option value="ipsum">Ipsum</option>
+						<option value="dolor">Dolor</option>
+					</select>
+				</div>
+			</form>
+
+			<button>FIND MY PRODUCT</button>
+		</section>
+
+		<section class="about-us">
+			<h2>DELIVERING CLEAN, SAFE WATER SINCE 1975. REFRESHING INDEED.</h2>
+			<p>
+				Vulcan wastewater screening equipment has played a vital role in protecting the 
+				water supply
+			</p>
+			<a href="#">About Us</a>
+		</section>
+
+		<section class="video">
+			<iframe src="https://player.vimeo.com/video/183929811" 
+				frameborder="0" 
+				webkitallowfullscreen="" 
+				mozallowfullscreen="" 
+				allowfullscreen="">
+			</iframe>
+		</section>
+
+		<section class="newsletter-submit">
+			<p>Stay in the know. Sign up for our newsletter.</p>
+
+			<form action="/" class="email-entry">
+				<label for="email"></label>
+				<input type="email" id="email" placeholder="Enter your email">
+				<input type="submit">
+			</form>
+		</section>
+
+		<section class="contact-us">
+			<div>
+				<h2>Ready to Spec for your next Vulcan Project?</h2>
+				<a href="#">Contact Us</a>
+			</div>
+			
+			<div>
+				<h2>Installed in a city near you</h2>
+				<a href="https://vulcanindustries.com/installation-map/">Find a Vulcan Install</a>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+
+		<img src="images/logo-white-vulcan.svg" alt="Vulcan logo">
+		
+		<p>Copyright 2017 All rights Reserved</p>
+
+		<i class="icon-facebook-circled icon"></i>
+		<i class="icon-linkedin-circled icon"></i>
+		<i class="icon-phone-circled icon">+1 712-642-2755</i>
+		<i class="icon-mail-circled icon">Contact Us</i>
+
+	</footer>
+
+	<!-- *** IMPORTANT *** If you do not require the jQuery Library then feel free to delete the next line -->
+	<script src="scripts/libs/jquery/jquery-3.4.1.min.js"></script>
+	<!-- *** IMPORTANT *** DO NOT DELETE OR EDIT THE NEXT LINE OF CODE - IT IS IMPORTANT FOR THE GULP BUILD PROCESS. SEE YOUR INSTRUCTOR FIRST IF YOU WANT TO EDIT OR DELETE THIS LINE -->
+	<script src="scripts/script.min.js?cb=1626987344973"></script>
+	<!-- *** IMPORTANT *** DO NOT ADD ADDITIONAL SCRIPT LINKS HERE...If you want to add additional scripts simply save the script files to the "dev/scripts" directory (for your custom scripts) and the 'dev/scripts/libs' directory for any jQuery plugins or other JavaScript libraries and Gulp will concatenate and minify them into the "script.min.js" file above. See the project instructions for details -->	
+	</body>
 </html>
