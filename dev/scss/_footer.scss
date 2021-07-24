@@ -2,7 +2,7 @@ footer {
   margin: $zero;
   display: flex;
   flex-direction: column;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   background-color: map-get($colors, bg-color);
   justify-content: space-evenly;
   align-items: center;
@@ -28,22 +28,26 @@ footer {
     width: $width-med;
     padding: $footer-padding;
     margin-bottom: $gen-margin;
+    flex-grow: 0 0 auto;
   }
 
-  @media ($tablet-breakpoint) {
+  @media screen and (min-width: $tablet-breakpoint) {
     footer {
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
+      flex-wrap: nowrap;
 
       #logo {
-        width: $width-sm;
+        width: 25%;
         padding: $footer-padding;
       }
       .footer-icon-row {
         flex-wrap: nowrap;
-        padding: $footer-padding;
       }
+    }
+
+    @media screen and (min-width: $desktop-breakpoint) {
     }
   }
 }

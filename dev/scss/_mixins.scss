@@ -4,13 +4,12 @@
     height: 50%;
     max-width: 100%;
     width: 100%;
-    background-size: auto;
+    background-size: 100%;
     background-repeat: no-repeat;
-    background-position: bottom;
     z-index: -3;
     content: "";
     background-image: url("../images/wave-blue-light.png");
-    transform: translateY(-75%);
+    transform: translateY(-100%);
     position: absolute;
     background-color: map-get($colors, transparent);
 
