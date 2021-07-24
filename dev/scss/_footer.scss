@@ -1,15 +1,18 @@
 footer {
   margin: $zero;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  font-size: 0.8rem;
   background-color: map-get($colors, bg-color);
   justify-content: space-evenly;
+  align-items: center;
   text-align: center;
 
   @include wave;
 
   .footer-icon-row {
     flex-wrap: nowrap;
+    flex-grow: 1;
   }
 
   .icon {
@@ -23,14 +26,26 @@ footer {
   }
 
   #logo {
-    width: $width-sm;
+    width: $width-med;
     padding: $footer-padding;
     margin-bottom: $gen-margin;
+    flex-grow: 0;
   }
 
   @media ($tablet-breakpoint) {
-    #logo {
-      padding: $footer-padding * 3;
+    footer {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      #logo {
+        width: $width-sm;
+        padding: $footer-padding;
+      }
+      .footer-icon-row {
+        flex-wrap: nowrap;
+        padding: $footer-padding;
+      }
     }
   }
 }
