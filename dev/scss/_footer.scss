@@ -12,7 +12,6 @@ footer {
 
   .footer-icon-row {
     flex-wrap: nowrap;
-    flex-grow: 1;
   }
 
   .icon {
@@ -29,7 +28,6 @@ footer {
     width: $width-med;
     padding: $footer-padding;
     margin-bottom: $gen-margin;
-    flex-grow: 0;
   }
 
   @media ($tablet-breakpoint) {

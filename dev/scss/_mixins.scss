@@ -1,27 +1,28 @@
 @mixin wave {
   position: relative;
   &::before {
-    height: 75%;
-    max-width: $full-width;
-    width: $full-width;
-    background-size: 100vw 75px;
+    height: 50%;
+    max-width: 100%;
+    width: 100%;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: bottom;
     z-index: -3;
     content: "";
     background-image: url("../images/wave-blue-light.png");
-    bottom: $zero;
     transform: translateY(-75%);
     position: absolute;
     background-color: map-get($colors, transparent);
 
     @media ($tablet-breakpoint) {
-      margin-left: $zero;
-      margin-left: 0em;
-      background-size: 100% 75%;
     }
     @media ($desktop-breakpoint) {
-      margin-left: $zero;
-      margin-left: 0em;
-      background-size: 100% 75%;
     }
   }
+}
+
+@mixin align-all-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
