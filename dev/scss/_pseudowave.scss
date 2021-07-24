@@ -1,0 +1,6 @@
+.contact-us::after {
+  content: url("../images/wave-blue-light.png");
+  position: absolute;
+  margin-bottom: 0;
+  background-color: map-get($colors, transparent);
+}

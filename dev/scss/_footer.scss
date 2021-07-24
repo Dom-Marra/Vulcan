@@ -1,0 +1,27 @@
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: map-get($colors, bg-color);
+  justify-content: center;
+  text-align: center;
+
+  .footer-icon-row {
+    flex-wrap: nowrap;
+  }
+
+  .icon {
+    color: map-get($colors, general-white);
+    font-family: $font-family;
+  }
+  p {
+    color: map-get($colors, general-white);
+    font-family: $font-family;
+    padding: $footer-padding;
+  }
+
+  img {
+    width: $logo-width-sm;
+    padding: $footer-padding;
+    margin-bottom: $gen-margin;
+  }
+}
