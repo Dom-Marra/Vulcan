@@ -12,6 +12,7 @@ footer {
 
   .footer-icon-row {
     flex-wrap: nowrap;
+    padding: $footer-padding;
   }
 
   .icon {
@@ -24,30 +25,44 @@ footer {
     padding: $footer-padding;
   }
 
-  #logo {
+  img.logo {
     width: $width-med;
     padding: $footer-padding;
     margin-bottom: $gen-margin;
-    flex-grow: 0 0 auto;
   }
 
   @media screen and (min-width: $tablet-breakpoint) {
-    footer {
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-wrap: nowrap;
 
-      #logo {
-        width: 25%;
-        padding: $footer-padding;
-      }
-      .footer-icon-row {
-        flex-wrap: nowrap;
-      }
+    img.logo {
+      width: $width-sm;
+      padding: $gen-margin;
+      margin: $gen-margin;
     }
+    .footer-icon-row {
+      padding: $footer-padding;
+      margin-top: $gen-margin;
+    }
+  }
 
-    @media screen and (min-width: $desktop-breakpoint) {
+  @media screen and (min-width: $desktop-breakpoint) {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-wrap: nowrap;
+
+    img.logo {
+      width: $width-ex-sm;
+      padding: $footer-padding;
+      margin: $gen-margin;
+    }
+    .icon {
+      display: inline-flex;
+      justify-content: space-between;
+      padding: $footer-padding;
     }
   }
 }
