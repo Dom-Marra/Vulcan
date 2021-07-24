@@ -1,10 +1,12 @@
 footer {
-  width: $full-width;
+  margin: $zero;
   display: flex;
   flex-wrap: wrap;
   background-color: map-get($colors, bg-color);
-  justify-content: center;
+  justify-content: space-evenly;
   text-align: center;
+
+  @include wave;
 
   .footer-icon-row {
     flex-wrap: nowrap;
@@ -24,5 +26,11 @@ footer {
     width: $width-sm;
     padding: $footer-padding;
     margin-bottom: $gen-margin;
+  }
+
+  @media ($tablet-breakpoint) {
+    #logo {
+      padding: $footer-padding * 3;
+    }
   }
 }
