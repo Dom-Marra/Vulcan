@@ -1,4 +1,5 @@
 footer {
+  width: $full-width;
   display: flex;
   flex-wrap: wrap;
   background-color: map-get($colors, bg-color);
@@ -19,8 +20,8 @@ footer {
     padding: $footer-padding;
   }
 
-  img {
-    width: $logo-width-sm;
+  #logo {
+    width: $width-sm;
     padding: $footer-padding;
     margin-bottom: $gen-margin;
   }

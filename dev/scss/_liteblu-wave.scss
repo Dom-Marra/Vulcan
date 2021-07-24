@@ -1,6 +1,7 @@
-.contact-us::after {
+div.pseudo::before {
+  z-index: -3;
   content: url("../images/wave-blue-light.png");
   position: absolute;
-  margin-bottom: 0;
+  margin-top: -8em;
   background-color: map-get($colors, transparent);
 }
