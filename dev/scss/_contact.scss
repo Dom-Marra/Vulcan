@@ -1,19 +1,61 @@
 section.contact-us {
+  height: fit-content;
   flex-direction: column;
   z-index: -4;
 
-  h2 {
-    font-family: $font-family;
-    text-transform: uppercase;
-    color: map-get($colors, $general-white);
-  }
+  text-transform: uppercase;
+  text-align: center;
 
   div.project {
     background-color: map-get($colors, slate-blue-bg);
+    height: 12em;
+    order: 5;
+    h2 {
+      font-family: $font-family;
+      color: map-get($colors, general-white);
+      font-size: 1.15rem;
+      padding: $gen-margin;
+      margin: $gen-margin;
+    }
+
+    a {
+      font-family: $font-family;
+      color: map-get($colors, general-white);
+      padding: $gen-margin;
+      border: 1px solid map-get($colors, general-white);
+      // background-color: map-get($colors, bg-color);
+      text-decoration: none;
+      margin: $gen-margin;
+    }
   }
 
   div.map {
-    background-image: url("/dev/images/map.jpg");
-    background-size: 100% 100%;
+    background-image: url("images/map.jpg");
+    z-index: 0;
+    order: -5;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    h2 {
+      font-family: $font-family;
+      color: map-get($colors, slate-blue-bg);
+      font-size: 1.15rem;
+      padding: $gen-margin;
+      margin: $gen-margin;
+      z-index: 5;
+    }
+
+    a {
+      font-family: $font-family;
+      color: map-get($colors, general-white);
+      padding: $footer-padding;
+      border: 1px solid map-get($colors, general-white);
+      // background-color: map-get($colors, bg-color);
+      text-decoration: none;
+      margin: $footer-padding;
+    }
   }
 }
