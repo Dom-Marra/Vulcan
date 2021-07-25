@@ -1,0 +1,19 @@
+section.contact-us {
+  flex-direction: column;
+  z-index: -4;
+
+  h2 {
+    font-family: $font-family;
+    text-transform: uppercase;
+    color: map-get($colors, $general-white);
+  }
+
+  div.project {
+    background-color: map-get($colors, slate-blue-bg);
+  }
+
+  div.map {
+    background-image: url("/dev/images/map.jpg");
+    background-size: 100% 100%;
+  }
+}

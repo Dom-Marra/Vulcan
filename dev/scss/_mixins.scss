@@ -4,7 +4,7 @@
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: top;
-    z-index: -3;
+    z-index: 0;
     content: "";
     background-image: url("../images/wave-blue-light.png");
     height: 75%;
@@ -21,7 +21,7 @@
         width: 100%;
         background-size: 100% 100%;
         background-repeat: no-repeat;
-        z-index: -3;
+        z-index: 0;
         content: "";
         background-image: url("../images/wave-blue-light.png");
         transform: translateY(-50%);
