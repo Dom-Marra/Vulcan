@@ -9,7 +9,7 @@ footer {
   text-align: center;
   text-transform: uppercase;
 
-  @include wave;
+  @include wave($wave-blue-light);
 
   .footer-icon-row {
     flex-wrap: nowrap;

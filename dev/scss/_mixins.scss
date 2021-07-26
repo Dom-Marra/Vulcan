@@ -1,4 +1,4 @@
-@mixin wave {
+@mixin wave($bg-image) {
   position: relative;
 
   &::before {
@@ -8,7 +8,7 @@
     background-repeat: no-repeat;
     z-index: -1;
     content: "";
-    background-image: url("../images/wave-blue-light.png");
+    background-image: url($bg-image);
     height: 10rem;
     width: 100%;
     transform: translateY(-50%);
