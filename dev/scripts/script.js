@@ -76,3 +76,47 @@ let setNewActiveImage = (index) => {
 
 //Init the active image to the first image
 setNewActiveImage(0);
+
+
+//------------------------------------------------//
+//                   Header                       //
+//------------------------------------------------//
+
+const TOP_NAV = $('#top-nav');
+const TOP_NAV_TOGGLE = $('#menu-toggle');
+const MEDIA_QUERY = window.matchMedia('(min-width: 48em)');
+const HEADER = $('#header');
+
+let toggleNav = (close = false) => {
+    if (TOP_NAV.hasClass('opened') || close) {
+        TOP_NAV.removeClass('opened');
+
+        TOP_NAV_TOGGLE.removeClass('toggled');
+    } else {
+        TOP_NAV.addClass('opened');
+
+        TOP_NAV_TOGGLE.addClass('toggled');
+    }
+}
+
+TOP_NAV_TOGGLE.click(() => {
+    toggleNav();
+});
+
+
+if (!MEDIA_QUERY.matches) {
+    TOP_NAV.addClass('animate');
+}
+
+MEDIA_QUERY.addEventListener('change', (e) => {
+    if (e.matches) {
+        TOP_NAV.removeClass('animate');
+        TOP_NAV.removeClass('opened');
+        TOP_NAV_TOGGLE.removeClass('toggled');
+
+    } else TOP_NAV.addClass('animate');
+});
+
+window.addEventListener('popstate', () => {
+    if (TOP_NAV.hasClass('opened')) toggleNav(true);
+})
