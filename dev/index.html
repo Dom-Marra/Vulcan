@@ -22,7 +22,7 @@
 
 </head>
 <body>
-	<header>
+	<header id="header">
 		<div class="header-main">
 			<div class="header-main-left">
 				<a href="#">Install Map</a>
@@ -32,20 +32,26 @@
 			<img src="images/logo-white-vulcan.svg" alt="Vulcan logo">
 			
 			<div class="header-main-right">
-				<a href="tel:+1712-642-2755" class="icon-phone-circled">+1 712-642-2755</a>
-				<a href="#">Contact Us</a>
+				<a href="tel:+1712-642-2755"><span class="icon-phone-circled"></span> +1 712-642-2755</a>
+				<a href="#"><span class="icon-mail-circled"></span> Contact Us</a>
 			</div>
+
+			<button id="menu-toggle" aria-label="Open menu">
+				<span></span>
+			</button>
 		</div>
 		
 
-		<nav class="navigate">
-            <ul class="menu">
+		<nav id="top-nav">
+            <ul>
                 <li><a href="#0">About</a></li>
                 <li><a href="#0">Products</a></li>
                 <li><a href="#0">Services</a></li>
                 <li><a href="#0">Parts</a></li>
 				<li><a href="#0">News</a></li>
                 <li><a href="#0">Contact</a></li>
+				<li class="hidden"><a href="#0">Installation Map</a></li>
+                <li class="hidden"><a href="#0">Product Literature</a></li>
             </ul>
 		</nav>
 
