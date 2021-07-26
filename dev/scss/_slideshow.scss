@@ -76,9 +76,9 @@
       font-family: "Roboto", sans-serif;
       font-weight: 400;
       text-transform: uppercase;
-      @include white-button;
 
       a {
+        @include white-button;
         color: inherit;
         margin: 0.5rem 0;
       }
