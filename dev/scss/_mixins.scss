@@ -26,3 +26,22 @@
     }
   }
 }
+
+@mixin white-button {
+  color: white;
+  margin: 0.5rem 0;
+  text-decoration: none;
+  padding: 0.65rem;
+  border: 1px solid white;
+  transition-property: color, background-color;
+  transition: 0.25s ease-in-out;
+
+  &:hover {
+    background-color: white;
+    color: map-get($colors, bg-color);
+  }
+
+  @media screen and (min-width: $tablet-breakpoint) {
+    padding: 0.65rem 2.25rem;
+  }
+}
