@@ -1,6 +1,5 @@
 section.contact-us {
   height: fit-content;
-  margin-bottom: $wide-margin;
   height: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -14,16 +13,22 @@ section.contact-us {
     background-color: map-get($colors, slate-blue-bg);
     width: 100%;
     height: fit-content;
-    order: 5;
+    order: 2;
+    padding-bottom: 8rem;
+
     h2 {
       font-family: $font-family;
       color: map-get($colors, general-white);
-      font-size: 0.75rem;
+      font-size: 1.75rem;
+      padding: $wide-margin;
     }
 
     a {
       font-family: $font-family;
       color: map-get($colors, general-white);
+      font-size: 1rem;
+      font-weight: bold;
+      padding: $mid-margin;
       border: 1px solid map-get($colors, general-white);
       text-decoration: none;
     }
@@ -32,28 +37,26 @@ section.contact-us {
   div.map {
     width: 100%;
     height: fit-content;
-    margin-bottom: $wide-margin;
     background-image: url("../images/map.jpg");
-    z-index: -10;
-    order: -5;
+    background-size: 100%;
+    order: 1;
+    padding-bottom: 8rem;
 
     h2 {
       font-family: $font-family;
-      color: map-get($colors, slate-blue-bg);
-      font-size: 0.75rem;
-      padding: $gen-margin;
-      margin: $gen-margin;
-      z-index: 5;
+      color: map-get($colors, header-gray);
+      font-size: 1.75rem;
+      padding: $wide-margin;
     }
 
     a {
       font-family: $font-family;
-      color: map-get($colors, body-txt);
-      padding: $footer-padding;
-      border: 1px solid map-get($colors, body-txt);
+      color: map-get($colors, header-gray);
+      font-size: 1rem;
+      font-weight: bold;
+      padding: $mid-margin;
+      border: 1px solid map-get($colors, header-gray);
       text-decoration: none;
-      margin: $footer-padding;
-      z-index: 10;
     }
   }
 
@@ -62,12 +65,46 @@ section.contact-us {
     flex-wrap: nowrap;
     div.map {
       width: 50%;
+      order: 2;
+      padding-bottom: 6rem;
+      background-image: url("../images/map.jpg");
+      background-size: 100%;
+
+      h2 {
+        font-family: $font-family;
+        color: map-get($colors, header-gray);
+        font-size: 0.75rem;
+        padding: $gen-margin;
+        margin: $gen-margin;
+      }
+
+      a {
+        font-family: $font-family;
+        color: map-get($colors, header-gray);
+        border: 1px solid map-get($colors, header-gray);
+        text-decoration: none;
+        padding: $gen-margin;
+      }
+    }
+
+    div.project {
+      width: 50%;
+      z-index: -1;
+      order: 1;
+      padding-bottom: 6rem;
+    }
+  }
+  @media screen and (min-width: $desktop-breakpoint) {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    div.map {
+      width: 50%;
+      order: 2;
     }
     div.project {
       width: 50%;
       z-index: -10;
+      order: 1;
     }
-  }
-  @media screen and (min-width: $desktop-breakpoint) {
   }
 }
