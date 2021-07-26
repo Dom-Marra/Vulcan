@@ -7,6 +7,7 @@ $colors: (
   custom-order-anchor: #616161,
   general-white: #ffffff,
   slate-blue-bg: #154a66,
+  header-gray: #504f4f,
   transparent: rgba(0, 0, 0, 0),
 );
 
@@ -16,15 +17,17 @@ $desktop-breakpoint: 82em;
 $max-width: 120em;
 $wide-video-border: 1em;
 $width-ex-sm: 15%;
-$width-sm: 25%;
+$width-sm: 30%;
 $width-med: 40%;
 $footer-padding: 0.5em;
+$mid-margin: 0.75rem;
 $gen-margin: 1em;
+$wide-margin: 2em;
 $zero: 0;
 $full-width: 100vw;
 
-$font-family: "Roboto", "Helvetica Neue", "Helvetica", sans-serif;
+$font-family: "Roboto Condensed", sans-serif;
 
-$wave-white: '../images/wave-white.png';
-$wave-blue-light: '../images/wave-blue-light.png';
-$wave-blue-dark: '../images/wave-blue-dark.png';
+$wave-white: "../images/wave-white.png";
+$wave-blue-light: "../images/wave-blue-light.png";
+$wave-blue-dark: "../images/wave-blue-dark.png";
