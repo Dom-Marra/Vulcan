@@ -1,35 +1,28 @@
-@mixin wave {
+@mixin wave($bg-image) {
   position: relative;
+
   &::before {
-    background-size: 200% 100%;
+    background-size: 200% 90%;
+    background-position: top 0% left 30%;
+    image-rendering: -webkit-optimize-contrast;
     background-repeat: no-repeat;
-    background-position: top;
-    z-index: 0;
+    z-index: -1;
     content: "";
-    background-image: url("../images/wave-blue-light.png");
-    height: 75%;
-    max-width: 100%;
+    background-image: url($bg-image);
+    height: 10rem;
     width: 100%;
-    transform: translateY(-100%);
+    transform: translateY(-50%);
+    top: 0;
     position: absolute;
     background-color: map-get($colors, transparent);
+  }
 
-    @media screen and (min-width: $tablet-breakpoint) {
-      &::before {
-        height: 100%;
-        max-width: 100%;
-        width: 100%;
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-        z-index: 0;
-        content: "";
-        background-image: url("../images/wave-blue-light.png");
-        transform: translateY(-50%);
-        position: absolute;
-        background-color: map-get($colors, transparent);
-      }
-      // @media ($desktop-breakpoint) {
-      // }
+  @media (min-width: $tablet-breakpoint) {
+    &::before {
+      height: 8rem;
+      transform: translateY(-55%);
+      background-size: 100% 100%;
+      background-position: center;
     }
   }
 }
