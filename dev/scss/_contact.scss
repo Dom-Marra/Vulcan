@@ -1,110 +1,116 @@
 section.contact-us {
-  height: fit-content;
-  height: 100%;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   z-index: -10;
+  min-height: 28rem;
 
   text-transform: uppercase;
   text-align: center;
 
+  div.map,
   div.project {
-    background-color: map-get($colors, slate-blue-bg);
+    min-height: 18rem;
+    padding-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
     width: 100%;
-    height: fit-content;
-    order: 2;
-    padding-bottom: 8rem;
 
     h2 {
       font-family: $font-family;
-      color: map-get($colors, general-white);
       font-size: 1.75rem;
-      padding: $wide-margin;
+      padding-top: calc(#{$mid-margin} * 6);
     }
 
     a {
       font-family: $font-family;
-      color: map-get($colors, general-white);
       font-size: 1rem;
       font-weight: bold;
-      padding: $mid-margin;
-      border: 1px solid map-get($colors, general-white);
+      padding: $mid-margin calc(#{$mid-margin} * 1.5);
       text-decoration: none;
+    }
+  }
+
+  div.project {
+    background-color: map-get($colors, slate-blue-bg);
+    order: 2;
+
+    h2 {
+      color: map-get($colors, general-white);
+    }
+
+    a {
+      color: map-get($colors, general-white);
+      border: 1px solid map-get($colors, general-white);
     }
   }
 
   div.map {
-    width: 100%;
-    height: fit-content;
     background-image: url("../images/map.jpg");
     background-size: 100%;
     order: 1;
-    padding-bottom: 8rem;
 
     h2 {
-      font-family: $font-family;
       color: map-get($colors, header-gray);
-      font-size: 1.75rem;
-      padding: $wide-margin;
     }
 
     a {
-      font-family: $font-family;
       color: map-get($colors, header-gray);
-      font-size: 1rem;
-      font-weight: bold;
-      padding: $mid-margin;
       border: 1px solid map-get($colors, header-gray);
-      text-decoration: none;
     }
   }
 
   @media screen and (min-width: $tablet-breakpoint) {
-    display: inline-flex;
     flex-wrap: nowrap;
-    div.map {
-      width: 50%;
-      order: 2;
-      padding-bottom: 6rem;
-      background-image: url("../images/map.jpg");
-      background-size: 100%;
+    align-items: stretch;
 
-      h2 {
-        font-family: $font-family;
-        color: map-get($colors, header-gray);
-        font-size: 0.75rem;
-        padding: $gen-margin;
-        margin: $gen-margin;
-      }
+    div.map,
+    div.project {
+      width: 50%;
 
       a {
-        font-family: $font-family;
+        background-color: map-get($colors, bg-color);
+        color: map-get($colors, general-white);
+        padding: $mid-margin;
+        border: none;
+      }
+
+      h2 {
+        max-width: 75%;
+      }
+    }
+
+    div.map {
+      order: 2;
+      padding-bottom: 4.4rem;
+      background-size: auto;
+
+      h2 {
         color: map-get($colors, header-gray);
-        border: 1px solid map-get($colors, header-gray);
-        text-decoration: none;
-        padding: $gen-margin;
       }
     }
 
     div.project {
-      width: 50%;
-      z-index: -1;
       order: 1;
-      padding-bottom: 6rem;
+      padding-bottom: 4.4rem;
+
+      h2 {
+        color: map-get($colors, general-white);
+      }
     }
   }
+
   @media screen and (min-width: $desktop-breakpoint) {
-    display: inline-flex;
-    flex-wrap: nowrap;
-    div.map {
-      width: 50%;
-      order: 2;
-    }
+    div.map,
     div.project {
       width: 50%;
-      z-index: -10;
-      order: 1;
+
+      h2 {
+        font-size: 3rem;
+      }
     }
   }
 }
