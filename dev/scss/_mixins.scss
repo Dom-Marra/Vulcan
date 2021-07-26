@@ -11,22 +11,19 @@
     background-image: url($bg-image);
     height: 10rem;
     width: 100%;
-    transform: translateY(-50%);
+    transform: translateY(-75%);
     position: absolute;
     background-color: map-get($colors, transparent);
   }
 
-  @media screen and (min-width: $tablet-breakpoint) {
+  @media (min-width: $desktop-breakpoint) {
     &::before {
       height: 8rem;
       width: 100%;
       background-size: 100% 100%;
       background-position: center;
-      transform: translateY(-4.5rem);
+      transform: translateY(-75%);
       position: absolute;
     }
   }
-
-  // @media ($desktop-breakpoint) {
-    // }
 }
