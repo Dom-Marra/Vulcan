@@ -31,7 +31,7 @@ footer {
 
   small,
   a {
-    color: map-get($colors, white);
+    color: white;
     font-family: $font-family;
     padding: $mid-margin 0;
     flex-grow: 1;

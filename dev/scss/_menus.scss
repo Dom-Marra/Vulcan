@@ -1,6 +1,6 @@
 .product-advisor {
   background-color: map-get($colors, slate-blue);
-  color: map-get($colors, white);
+  color: white;
   font-family: "Roboto Condensed", sans-serif;
   max-width: 100%;
   padding: 2%;
@@ -67,7 +67,7 @@
       font-size: 1.2em;
       border: none;
       background-color: map-get($colors, lite-blue);
-      color: map-get($colors, white);
+      color: white;
     }
   }
 }
@@ -83,7 +83,7 @@
 
 @media screen and (min-width: $desktop-breakpoint) {
   p {
-    color: map-get($colors, white);
+    color: white;
   }
 
   .product-flex {

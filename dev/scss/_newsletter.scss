@@ -37,7 +37,7 @@
     font-family: $font-family-reg;
     font-weight: bold;
     background-color: map-get($colors, lite-blue);
-    color: map-get($colors, white);
+    color: white;
     border: none;
     text-transform: uppercase;
     margin-left: $mid-margin;
