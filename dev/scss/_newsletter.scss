@@ -9,7 +9,7 @@
 
   label {
     font-family: $font-family;
-    color: map-get($colors, slate-blue-bg);
+    color: map-get($colors, slate-blue);
     font-size: 1.25rem;
     font-weight: 400;
     width: 100%;
@@ -36,7 +36,7 @@
     padding: calc(#{$mid-margin} * 0.75) calc(#{$mid-margin} * 1.5);
     font-family: $font-family-reg;
     font-weight: bold;
-    background-color: map-get($colors, bg-color);
+    background-color: map-get($colors, lite-blue);
     color: map-get($colors, general-white);
     border: none;
     text-transform: uppercase;
@@ -69,7 +69,6 @@
     }
   }
   @media screen and (min-width: $desktop-breakpoint) {
-
     label {
       font-size: 1.75rem;
     }

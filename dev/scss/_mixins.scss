@@ -20,7 +20,7 @@
     top: 0;
     position: absolute;
     background-color: map-get($colors, transparent);
-    left:0;
+    left: 0;
   }
 
   @media (min-width: $tablet-breakpoint) {
@@ -44,7 +44,7 @@
 
   &:hover {
     background-color: white;
-    color: map-get($colors, bg-color);
+    color: map-get($colors, lite-blue);
   }
 
   @media screen and (min-width: $tablet-breakpoint) {

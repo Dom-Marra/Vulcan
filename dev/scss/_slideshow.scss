@@ -41,7 +41,7 @@
 
         &.active,
         &:hover {
-          background-color: map-get($colors, bg-color);
+          background-color: map-get($colors, lite-blue);
         }
 
         &:hover {
@@ -102,7 +102,7 @@
       top: auto;
       bottom: 11rem;
       transform: translateX(-50%);
-      width: calc( #{$tablet-breakpoint} * 0.95);
+      width: calc(#{$tablet-breakpoint} * 0.95);
 
       h1 {
         width: 100%;
@@ -134,11 +134,8 @@
     }
   }
 
-
   @media screen and (min-width: $desktop-breakpoint) {
-
     .slide-text-wrapper {
-
       h1 {
         font-size: 3rem;
       }
@@ -160,7 +157,7 @@
         font-size: 4.75rem;
       }
 
-      .products-services-wrapper { 
+      .products-services-wrapper {
         margin-top: 5rem;
       }
     }

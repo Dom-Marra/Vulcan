@@ -31,7 +31,7 @@ section.contact-us {
         font-family: $font-family;
         font-size: 1.75rem;
       }
-  
+
       a {
         font-family: $font-family;
         font-size: 1rem;
@@ -39,12 +39,11 @@ section.contact-us {
         padding: $mid-margin calc(#{$mid-margin} * 1.5);
         text-decoration: none;
       }
-    
     }
   }
 
   div.project {
-    background-color: map-get($colors, slate-blue-bg);
+    background-color: map-get($colors, slate-blue);
     order: 2;
 
     h2 {
@@ -91,7 +90,7 @@ section.contact-us {
         }
 
         a {
-          background-color: map-get($colors, bg-color);
+          background-color: map-get($colors, lite-blue);
           color: map-get($colors, general-white);
           padding: $mid-margin $thick-margin;
           border: none;
@@ -137,7 +136,7 @@ section.contact-us {
     div.map {
       align-items: start;
 
-      .text-wrapper { 
+      .text-wrapper {
         width: 35rem;
       }
     }
@@ -145,7 +144,7 @@ section.contact-us {
     div.project {
       align-items: flex-end;
 
-      .text-wrapper { 
+      .text-wrapper {
         width: 42rem;
       }
     }

@@ -1,5 +1,5 @@
 .video {
-  background-color: map-get($colors, bg-color);
+  background-color: map-get($colors, lite-blue);
   padding: 5rem 0;
 
   .wrapper {
@@ -11,7 +11,7 @@
     position: relative;
     padding-top: 56.25%;
     width: 100%;
-    box-shadow: 0px 0px 0px 1rem map-get($colors, slate-blue-bg);
+    box-shadow: 0px 0px 0px 1rem map-get($colors, slate-blue);
   }
 
   iframe {
@@ -33,8 +33,8 @@
     }
 
     .keep-ratio {
-      box-shadow: 0px 2px 0px 1rem map-get($colors, slate-blue-bg),
-        0px -2px 0px 1rem map-get($colors, slate-blue-bg);
+      box-shadow: 0px 2px 0px 1rem map-get($colors, slate-blue),
+        0px -2px 0px 1rem map-get($colors, slate-blue);
     }
 
     iframe {
