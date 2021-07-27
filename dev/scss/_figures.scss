@@ -1,0 +1,150 @@
+.customized-order{
+    padding-bottom: 5rem;
+    @include wave($wave-white);
+}
+
+.customized-order-text{
+    font-family: "Roboto Condensed", sans-serif;
+    text-align: center;
+    color:map-get($colors, custom-order-anchor);
+
+    h2{
+        text-transform: uppercase;
+        margin:2rem auto;
+        max-width: 10rem;
+    }
+
+    p{
+        margin: 1rem 2rem 2rem;
+        font-weight: bold;
+    }
+}
+
+.product-row {
+
+    .prod-column {
+        margin: 0;
+        padding: 0 2rem;
+        display: flex;
+        align-items: center;
+        max-width: 100%;
+        justify-content: center;
+        position: relative;
+        margin: 3rem 0 2rem;
+
+        &::after {
+            content:"";
+            position: absolute;
+            height: 2px;
+            width: 95vw;
+            background-color: lightgrey;
+            bottom: -0.75rem;
+            left:50%;
+            transform:translateX(-50%);
+        }
+
+        img {
+            min-width: 0;
+            flex-shrink: 1;
+        }
+
+        figcaption {
+            font-family: "Roboto Condensed", sans-serif;
+            font-weight: bold;
+            color:map-get($colors, custom-order-anchor);
+            padding:0.5rem;
+
+            .prod-selection{
+                color:map-get($colors, custom-order-anchor);
+                font-size: small;
+                display:none;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $tablet-breakpoint){
+
+    .customized-order-text{
+
+        h2 {
+            color:map-get($colors, heading-color-primary);
+            text-transform: uppercase;
+            margin:1rem auto;
+            max-width: none;
+        }
+    
+        p {
+            margin: 1rem 2rem 2rem;
+            font-weight: bold;
+        }
+    }
+
+
+    .product-row {
+        display: flex;
+        margin: 0 0.5rem;
+    
+        .prod-column {
+            margin: 0;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+
+            &::after {
+                display: none;
+            }
+
+            figcaption {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                color: map-get($colors, heading-color-secondary);
+                margin: 0 auto;
+                justify-content: space-between;
+                font-weight: bold;
+                font-size: larger;
+                text-align: center;
+
+                .prod-selection {
+                    display: block;
+                }
+
+                a {
+                    padding-top: 0.5rem;
+                }
+            }
+        }
+    }
+}
+
+
+    @media screen and (min-width: $desktop-breakpoint){
+
+        .customized-order-text{
+        
+            p {
+                max-width: 46rem;
+                margin: 1rem auto 2rem;
+            }
+        }
+
+        .product-row {
+            .prod-column {
+                    figcaption {
+                        font-size:xx-large;
+                        text-align: center;
+                    }
+                }
+            }
+    }
+        
+
+
+
+
+
+
+
+
+
