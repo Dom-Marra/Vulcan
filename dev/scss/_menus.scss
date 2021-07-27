@@ -1,6 +1,3 @@
-.product-wave{
-    
-}
 
 .product-advisor {
     background-color: map-get($colors,slate-blue-bg);
@@ -9,7 +6,7 @@
     max-width:100%;
     padding: 2%;
     margin: 1rem 0 0 0;
-    
+    @include wave($wave-blue-dark);
 
     h2{
         text-align: center;
