@@ -18,7 +18,7 @@
 	<!-- end Google Fonts -->
 
 	<!-- *** IMPORTANT *** DO NOT DELETE OR EDIT THE NEXT LINE OF CODE - IT IS IMPORTANT FOR THE GULP BUILD PROCESS. SEE YOUR INSTRUCTOR FIRST IF YOU WANT TO EDIT OR DELETE THIS LINE -->
-	<link rel="stylesheet" href="styles/styles.css?cb=1627318489556">
+	<link rel="stylesheet" href="styles/styles.css?cb=1627350197277">
 
 </head>
 <body>
@@ -152,54 +152,67 @@
 			
 		</section>
 
-		<section class="product-advisor">
+		<section class="product-advisor product-wave">
 			<h2>Product Advisor</h2>
 			<p>Find your project's perfect fit.</p>
 
-			<form action="/" method="POST" name="projectAdvisorForm">
-				<div class="form-group">
-					<label for="product-type">Product Type</label>
-					<select name="productType" id="product-type">
-						<option value="lorem">Lorem</option>
-						<option value="ipsum">Ipsum</option>
-						<option value="dolor">Dolor</option>
-					</select>
-				</div>
-				<div class="form-group">
-					<label for="screen-location">Screen Location</label>
-					<select name="screenType" id="screen-location">
-						<option value="lorem">Lorem</option>
-						<option value="ipsum">Ipsum</option>
-						<option value="dolor">Dolor</option>
-					</select>
-				</div>
-				<div class="form-group">
-					<label for="flow-type">Flow Type</label>
-					<select name="flowType" id="flow-type">
-						<option value="lorem">Lorem</option>
-						<option value="ipsum">Ipsum</option>
-						<option value="dolor">Dolor</option>
-					</select>
-				</div>
-				<div class="form-group">
-					<label for="channel-depth">Channel Depth</label>
-					<select name="channelDepth" id="channel-depth">
-						<option value="lorem">Lorem</option>
-						<option value="ipsum">Ipsum</option>
-						<option value="dolor">Dolor</option>
-					</select>
-				</div>
-				<div class="form-group">
-					<label for="channel-width">Channel Width</label>
-					<select name="channelWidth" id="channel-width">
-						<option value="lorem">Lorem</option>
-						<option value="ipsum">Ipsum</option>
-						<option value="dolor">Dolor</option>
-					</select>
-				</div>
-			</form>
+			<div class = "product-field">
 
-			<button>FIND MY PRODUCT</button>
+				<form class = "product-flex" action="/" method="POST" name="projectAdvisorForm">
+					<div class="form-group">
+						<label for="product-type">Product Type</label>
+						<select name="productType" id="product-type">
+							<option value="lorem">Select</option>
+							<option value="ipsum">Ipsum</option>
+							<option value="dolor">Dolor</option>
+						</select>
+					</div>
+
+					<div class="form-group">
+						<label for="screen-location">Screen Location</label>
+						<select name="screenType" id="screen-location">
+							<option value="lorem">Select</option>
+							<option value="ipsum">Ipsum</option>
+							<option value="dolor">Dolor</option>
+						</select>
+					</div>
+
+					<div class="form-group">
+						<label for="flow-type">Flow Type</label>
+						<select name="flowType" id="flow-type">
+							<option value="lorem">Select</option>
+							<option value="ipsum">Ipsum</option>
+							<option value="dolor">Dolor</option>
+						</select>
+					</div>
+
+					<div class="form-group">
+						<label for="channel-depth">Channel Depth</label>
+						<select name="channelDepth" id="channel-depth">
+							<option value="lorem">Select</option>
+							<option value="ipsum">Ipsum</option>
+							<option value="dolor">Dolor</option>
+						</select>
+					</div>
+
+					<div class="form-group">
+						<label for="channel-width">Channel Width</label>
+						<select name="channelWidth" id="channel-width">
+							<option value="lorem">Select</option>
+							<option value="ipsum">Ipsum</option>
+							<option value="dolor">Dolor</option>
+						</select>
+					</div>
+				</form>
+			</div>
+
+				<div class="form-group product-button">
+					<div class="find-product">
+						<input type="submit" value="FIND MY PRODUCT">
+					</div>
+				</div>
+			
+
 		</section>
 
 		<section class="about-us">
@@ -262,7 +275,7 @@
 	<!-- *** IMPORTANT *** If you do not require the jQuery Library then feel free to delete the next line -->
 	<script src="scripts/libs/jquery/jquery-3.4.1.min.js"></script>
 	<!-- *** IMPORTANT *** DO NOT DELETE OR EDIT THE NEXT LINE OF CODE - IT IS IMPORTANT FOR THE GULP BUILD PROCESS. SEE YOUR INSTRUCTOR FIRST IF YOU WANT TO EDIT OR DELETE THIS LINE -->
-	<script src="scripts/script.min.js?cb=1627318489556"></script>
+	<script src="scripts/script.min.js?cb=1627350197277"></script>
 	<!-- *** IMPORTANT *** DO NOT ADD ADDITIONAL SCRIPT LINKS HERE...If you want to add additional scripts simply save the script files to the "dev/scripts" directory (for your custom scripts) and the 'dev/scripts/libs' directory for any jQuery plugins or other JavaScript libraries and Gulp will concatenate and minify them into the "script.min.js" file above. See the project instructions for details -->	
 	</body>
 </html>

@@ -1,0 +1,70 @@
+.product-wave{
+    
+}
+
+.product-advisor {
+    background-color: map-get($colors,slate-blue-bg);
+    color:map-get($colors, general-white);
+    font-family: "Roboto Condensed", sans-serif;
+    max-width:100%;
+    padding: 2%;
+    margin: 1rem 0 0 0;
+    
+
+    h2{
+        text-align: center;
+        margin:0.5rem;
+        text-transform: uppercase;
+    }
+
+    p{
+        text-align: center;
+        margin:0 0 2rem 0;
+        padding-bottom: 1.5rem;
+        border-bottom: 1px solid white;
+    }
+
+    .form-group {
+        display: block;
+
+        select{
+            width: 100%;
+            margin: 0.5rem 0 1.5rem 0;
+            height: 40px;
+            color:map-get($colors, custom-order-anchor);
+            background-color: lightgrey;
+        }
+
+        label{
+            font-weight: bold;
+        }
+    }
+
+    .form-group  {
+    .find-product input{
+        margin: 4rem 0;
+        display: block;
+        width: 100%;
+        padding: 1rem;
+        font-size: 1.2em;
+        border:none;
+        background-color: map-get($colors, bg-color);
+        color:map-get($colors, general-white);
+        
+    }
+    
+}
+
+}
+
+@media screen and (min-width: $tablet-breakpoint){
+    //do grid
+    .product-flex {
+        width:100%;
+        display: flex;
+        flex-flow: row wrap;
+        
+    }
+
+        
+}
