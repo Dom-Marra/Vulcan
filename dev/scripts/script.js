@@ -36,7 +36,7 @@ let setNewActiveImage = (index) => {
 
     //Do not switch if the current index is the same as the current image
     if (index != currentSlideIndex) {
-        currentSliderAnimation?.finish();       //Make the current animation finish
+        if (currentSliderAnimation) currentSliderAnimation.finish();       //Make the current animation finish
         currentSlideIndex = index;              //Set the current image index to the one passed
 
         let nextActiveZ = 1;                    //The z-index to set the active image initially
