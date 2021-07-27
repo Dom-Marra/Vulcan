@@ -1,0 +1,80 @@
+.newsletter-submit {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: map-get($colors, news-bg);
+  font-family: $font-family;
+  padding: $mid-margin;
+
+  label {
+    font-family: $font-family;
+    color: map-get($colors, slate-blue);
+    font-size: 1.25rem;
+    font-weight: 400;
+    width: 100%;
+    text-align: center;
+    margin: $mid-margin 0;
+  }
+
+  .email-entry {
+    padding-top: $footer-padding;
+    padding-bottom: $gen-margin;
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #email {
+    border: none;
+    padding: 0 $mid-margin;
+    flex: 1;
+    min-width: 0px;
+  }
+
+  .btn-news {
+    padding: calc(#{$mid-margin} * 0.75) calc(#{$mid-margin} * 1.5);
+    font-family: $font-family-reg;
+    font-weight: bold;
+    background-color: map-get($colors, lite-blue);
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    margin-left: $mid-margin;
+  }
+
+  @media screen and (min-width: $tablet-breakpoint) {
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+
+    label {
+      margin: $zero;
+      margin-right: $gen-margin;
+      font-size: 1.25rem;
+      align-self: center;
+      width: auto;
+    }
+
+    #email {
+      min-width: 30%;
+      flex: 0;
+    }
+
+    .email-entry {
+      max-width: $tablet-breakpoint;
+      padding: $mid-margin 0;
+      flex-wrap: nowrap;
+      justify-content: center;
+    }
+  }
+  @media screen and (min-width: $desktop-breakpoint) {
+    label {
+      font-size: 1.75rem;
+    }
+
+    .email-entry {
+      max-width: $desktop-breakpoint;
+    }
+  }
+}
