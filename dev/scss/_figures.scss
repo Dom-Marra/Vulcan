@@ -10,7 +10,7 @@
 
     h2{
         text-transform: uppercase;
-        margin:2rem auto;
+        margin: 0 auto 2rem;
         max-width: 10rem;
     }
 
@@ -32,7 +32,7 @@
         position: relative;
         margin: 3rem 0 2rem;
 
-        &::after {
+        &:not(:last-of-type)::after {
             content:"";
             position: absolute;
             height: 2px;
@@ -70,7 +70,8 @@
         h2 {
             color:map-get($colors, heading-color-primary);
             text-transform: uppercase;
-            margin:1rem auto;
+            margin: 0 auto 1rem;
+            padding-top: 2rem;
             max-width: none;
         }
     

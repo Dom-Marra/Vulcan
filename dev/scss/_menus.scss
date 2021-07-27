@@ -8,13 +8,13 @@
     margin: 1rem 0 0 0;
     @include wave($wave-blue-dark);
 
-    h2{
+    h2 {
         text-align: center;
         margin:0.5rem;
         text-transform: uppercase;
     }
 
-    p{
+    p {
         text-align: center;
         margin:0 0 2rem 0;
         padding-bottom: 1.5rem;
@@ -24,12 +24,34 @@
     .form-group {
         display: block;
 
-        select{
+        select {
             width: 100%;
             margin: 0.5rem 0 1.5rem 0;
             height: 40px;
             color:map-get($colors, custom-order-anchor);
             background-color: lightgrey;
+            padding: 0 0.75rem;
+            border: none;
+            position: relative;
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            appearance: none;
+        }
+
+        span {
+            font-size: 1rem;
+            color: map-get($colors, bg-color);
+            position: absolute;
+            right: 0.5rem;
+            bottom: 50%;
+            transform: translateY(60%);
+            pointer-events: none;
+        }
+
+        &:first-of-type {
+            select {
+                background-color: lighten(lightgrey, 20%);
+            }
         }
 
         label{
@@ -56,26 +78,25 @@
 
 @media screen and (min-width: $tablet-breakpoint){
     .product-flex {
-        // width:100%;
-        // display: flex;
-        // flex-flow: row wrap;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-auto-rows: 1fr;
         grid-gap: 0.25rem;
-
-
     }
-
-        
 }
 
 @media screen and (min-width: $desktop-breakpoint){
-    .product-flex{
+
+    p {
+        color: map-get($colors, bg-color);
+    }
+    
+    .product-flex {
         display:flex;
         justify-content: space-between;
     }
+
     .form-group{
-        flex:1;
+        flex: 1;
     }
 }

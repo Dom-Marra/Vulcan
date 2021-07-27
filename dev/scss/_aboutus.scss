@@ -32,7 +32,7 @@
     }
 
     @media screen and (min-width: $tablet-breakpoint) {
-        justify-content: space-around;
+        justify-content: center;
 
         h2 {
             font-size: 2rem;
@@ -44,20 +44,26 @@
         }
 
         a { 
-            margin-top: 0;
+            margin-top: 5rem;
         }
     }
 
     @media screen and (min-width: $desktop-breakpoint) { 
+        justify-content: space-around;
         padding: 4rem 1rem;
 
         h2 {
-            font-size: 3rem;
-            max-width: 45rem;
+            font-size: 4rem;
+            max-width: 56rem;
+            margin-bottom: 0.25rem;
         }
 
         p {
             max-width: 50rem;
+        }
+
+        a { 
+            margin-top: 0;
         }
     }
 }

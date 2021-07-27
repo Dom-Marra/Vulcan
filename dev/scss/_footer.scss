@@ -2,71 +2,91 @@ footer {
   margin: $zero;
   display: flex;
   flex-direction: column;
-  font-size: 0.75rem;
   background-color: map-get($colors, bg-color);
   justify-content: space-evenly;
   align-items: center;
   text-align: center;
   text-transform: uppercase;
+  padding: 1.5rem 1rem;
 
   @include wave($wave-blue-light);
-
-  .footer-icon-row {
-    flex-wrap: nowrap;
-    padding: $footer-padding;
-  }
 
   .icon {
     color: map-get($colors, general-white);
     font-family: $font-family;
+    font-size: 1.2rem;
+    margin: 0 0.25rem;
   }
-  p {
+
+  .footer-icon-row { 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+
+    :last-child {
+      width: 100%;
+    }
+  }
+
+  small, a {
     color: map-get($colors, general-white);
     font-family: $font-family;
-    padding: $footer-padding;
+    padding: $mid-margin 0;
+    flex-grow: 1;
   }
 
   img.logo {
-    width: $width-sm;
-    padding: $footer-padding;
+    width: $width-med;
     margin-bottom: $gen-margin;
-    z-index: 10;
   }
+
 
   @media screen and (min-width: $tablet-breakpoint) {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     flex-wrap: nowrap;
-    font-size: 1rem;
+    padding: 1.5rem calc((100% - #{$tablet-breakpoint}) / 2);
 
     img.logo {
-      width: $width-sm;
-      padding: $gen-margin;
-      margin: $gen-margin;
+      height: 5rem;
+      margin: 0;
     }
-    .footer-icon-row {
-      padding: $footer-padding;
-      margin-top: $gen-margin;
+    
+    .footer-icon-row { 
+      align-self: flex-end;
+      width: 66%;
+      justify-content: center;
+      align-items: center;
+
+      .icon {
+        font-size: 1.5rem;
+      }
+
+      small, a { 
+        margin: 0 0.35rem;
+        flex-grow: 0;
+      }
     }
   }
 
   @media screen and (min-width: $desktop-breakpoint) {
-    flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: flex-end;
-    flex-wrap: nowrap;
+    padding: 1.5rem calc((100% - #{$desktop-breakpoint}) / 2);
 
     img.logo {
-      width: $width-ex-sm;
-      padding: $footer-padding;
-      margin: $gen-margin;
+      height: 5rem;
     }
-    .icon {
-      display: inline-flex;
-      justify-content: space-between;
-      padding: $footer-padding;
-      font-size: 1.2rem;
+
+    .footer-icon-row { 
+      display: flex;
+      align-items: center;
+
+      :last-child {
+        width: auto;
+      }
     }
   }
 }

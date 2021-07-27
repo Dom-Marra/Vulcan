@@ -10,7 +10,8 @@ section.contact-us {
 
   div.map,
   div.project {
-    min-height: 18rem;
+    min-height: 20rem;
+    padding: 2rem;
     padding-bottom: 5rem;
     display: flex;
     flex-direction: column;
@@ -19,18 +20,26 @@ section.contact-us {
     z-index: -1;
     width: 100%;
 
-    h2 {
-      font-family: $font-family;
-      font-size: 1.75rem;
-      padding-top: calc(#{$mid-margin} * 6);
-    }
+    .text-wrapper {
+      max-width: 25rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
 
-    a {
-      font-family: $font-family;
-      font-size: 1rem;
-      font-weight: bold;
-      padding: $mid-margin calc(#{$mid-margin} * 1.5);
-      text-decoration: none;
+      h2 {
+        font-family: $font-family;
+        font-size: 1.75rem;
+      }
+  
+      a {
+        font-family: $font-family;
+        font-size: 1rem;
+        font-weight: bold;
+        padding: $mid-margin calc(#{$mid-margin} * 1.5);
+        text-decoration: none;
+      }
+    
     }
   }
 
@@ -71,15 +80,22 @@ section.contact-us {
     div.project {
       width: 50%;
 
-      a {
-        background-color: map-get($colors, bg-color);
-        color: map-get($colors, general-white);
-        padding: $mid-margin;
-        border: none;
-      }
+      .text-wrapper {
+        width: 100%;
+        max-width: 100%;
 
-      h2 {
-        max-width: 75%;
+        h2 {
+          width: 75%;
+          padding: 0;
+          font-size: 2rem;
+        }
+
+        a {
+          background-color: map-get($colors, bg-color);
+          color: map-get($colors, general-white);
+          padding: $mid-margin $thick-margin;
+          border: none;
+        }
       }
     }
 
@@ -107,9 +123,30 @@ section.contact-us {
     div.map,
     div.project {
       width: 50%;
+      min-height: 32rem;
+      padding: 4rem;
 
-      h2 {
-        font-size: 3rem;
+      .text-wrapper {
+        h2 {
+          font-size: 3rem;
+          width: 100%;
+        }
+      }
+    }
+
+    div.map {
+      align-items: start;
+
+      .text-wrapper { 
+        width: 35rem;
+      }
+    }
+
+    div.project {
+      align-items: flex-end;
+
+      .text-wrapper { 
+        width: 42rem;
       }
     }
   }
