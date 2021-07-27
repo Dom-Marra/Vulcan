@@ -58,13 +58,27 @@
 }
 
 @media screen and (min-width: $tablet-breakpoint){
-    //do grid
     .product-flex {
-        width:100%;
-        display: flex;
-        flex-flow: row wrap;
-        
+        // width:100%;
+        // display: flex;
+        // flex-flow: row wrap;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 1fr;
+        grid-gap: 0.25rem;
+
+
     }
 
         
+}
+
+@media screen and (min-width: $desktop-breakpoint){
+    .product-flex{
+        display:flex;
+        justify-content: space-between;
+    }
+    .form-group{
+        flex:1;
+    }
 }
