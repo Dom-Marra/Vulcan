@@ -9,7 +9,7 @@ footer {
   text-align: center;
   text-transform: uppercase;
 
-  @include wave;
+  @include wave($wave-blue-light);
 
   .footer-icon-row {
     flex-wrap: nowrap;
@@ -27,9 +27,10 @@ footer {
   }
 
   img.logo {
-    width: $width-med;
+    width: $width-sm;
     padding: $footer-padding;
     margin-bottom: $gen-margin;
+    z-index: 10;
   }
 
   @media screen and (min-width: $tablet-breakpoint) {
@@ -37,6 +38,7 @@ footer {
     justify-content: space-around;
     align-items: center;
     flex-wrap: nowrap;
+    font-size: 1rem;
 
     img.logo {
       width: $width-sm;
@@ -64,6 +66,7 @@ footer {
       display: inline-flex;
       justify-content: space-between;
       padding: $footer-padding;
+      font-size: 1.2rem;
     }
   }
 }
