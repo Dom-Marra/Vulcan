@@ -40,6 +40,7 @@ footer {
   img.logo {
     width: $width-med;
     margin-bottom: $gen-margin;
+    object-fit: contain;
   }
 
   @media screen and (min-width: $tablet-breakpoint) {
